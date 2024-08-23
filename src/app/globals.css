@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-img{
+  background-image: url("https://images.unsplash.com/photo-1601758177266-bc599de87707?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fE5HTyUyMGRvZ3N8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+
+.slide1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure this is the same height as your SwiperSlide */
+  z-index: 0; /* Set the z-index for stacking */
+  overflow: hidden; /* Hide the overflowing background */
+}
+.slide1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.thefelinefoundation.com/wp-content/uploads/2020/09/zatoichi-slider1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(50%);
+  z-index: -1; /* Position it behind the content */
+}
+.slide1 h3,
+.slide1 p,
+.slide1 button {
+  position: relative;
+  z-index: 10; /* Ensure text and buttons appear above the background */
+}
+
+
+
+.slide2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure this is the same height as your SwiperSlide */
+  z-index: 0; /* Set the z-index for stacking */
+  overflow: hidden; /* Hide the overflowing background */
+}
+.slide2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.thefelinefoundation.com/wp-content/uploads/2020/09/clinic-treatment1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(50%);
+  z-index: -1; /* Position it behind the content */
+}
+.slide2 h3,
+.slide2 p,
+.slide2 button {
+  position: relative;
+  z-index: 10; /* Ensure text and buttons appear above the background */
+}
+
+
+
+
+.slide3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure this is the same height as your SwiperSlide */
+  z-index: 0; /* Set the z-index for stacking */
+  overflow: hidden; /* Hide the overflowing background */
+}
+.slide3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.thefelinefoundation.com/wp-content/uploads/2020/09/cat-3-11.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(50%);
+  z-index: -1; /* Position it behind the content */
+}
+.slide3 h3,
+.slide3 p,
+.slide3 button {
+  position: relative;
+  z-index: 10; /* Ensure text and buttons appear above the background */
+}
+
+
+.swiper-button-next,
+.swiper-button-prev{
+    top: unset;
+    left: unset;
+    right: unset;
+    bottom: unset;
+    width: unset !important;
+    height: unset !important;
+    font-size: unset !important;
+    position: unset !important;
+
+}
+
+.swiper-button-next::after{
+  font-size:unset !important;
+  
+  color: orange !important;;
+  font-weight: 800;
+    
+}
+.swiper-button-prev::after{
+  font-size:unset !important;
+  
+  color: orange !important;;
+  font-weight: 800;
+    
+}
+
+.counter-img{
+  background-image: url("https://www.peopleforanimalsindia.org/front/img/testimonial.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.whatwedo{
+  background-image: url("https://sarvoham.org/wp-content/uploads/2021/12/download-1-4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.rescue{
+  background-image: url("https://sarvoham.org/wp-content/uploads/2020/08/form_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
