@@ -34,11 +34,11 @@ const Navbar = () => {
   return (
     <nav
     className={`flex justify-between items-center px-4 py-1 fixed w-full top-0 z-50 transition-colors duration-300 ${
-      pathname === "/" || pathname === "/what-we-do"|| pathname === "/Getinvolved" 
+      pathname === "/" || pathname === "/what-we-do"|| pathname === "/Getinvolved"  
         ? isScrolled
           ? "bg-green-500 text-black"
           : "bg-transparent text-white"
-        : "bg-orange-500/25 text-black"
+        : "bg-green-500 text-black"
     }`}
     >
       <div className="text-xl font-bold">
