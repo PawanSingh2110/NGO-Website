@@ -13,8 +13,8 @@ const Card = ({ title, description, image }) => {
         <p className="text-gray-700 mb-4">{description}</p>
       </div>
       <div className="p-6 pt-0">
-        <button className="bg-yellow-500 text-black px-4 py-2 rounded-md font-semibold hover:bg-yellow-600 transition duration-300">
-          Read More & Donate
+        <button className="bg-yellow-500 text-black px-4 py-2 rounded-md font-semibold hover:scale-105 transition duration-300">
+          <a href="#">Read More & Donate</a>
         </button>
       </div>
     </div>
@@ -30,31 +30,31 @@ const App = () => {
       title: "Shaurya",
       description:
         "Shaurya, a 5-year-old male dog rescued from Malad East, desperately needs Rs. 25,000 for treatment of a severe back injury that has led to a maggot infection. The poor pup is in excruciating pain and requires immediate medical attention to save his life. Please help this innocent animal in urgent distress regain his health and freedom from suffering.",
-      image: "https://via.placeholder.com/400x300.png?text=Shaurya",
+      image: "https://images.unsplash.com/photo-1701651092825-8e0e3ea5e7cf?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Shera",
       description:
         "Shera, a one-year-old male cat rescued from Malad West, desperately needs Rs. 25,000 for medical treatment after being attacked by dogs, leaving him paralysed. The poor cat requires immediate surgery and rehabilitation to have any chance of walking again. Your donation can provide Shera with the care he needs to recover and find a loving home. Please help this innocent victim of a tragic accident regain his health and mobility..",
-      image: "https://via.placeholder.com/400x300.png?text=shera",
+      image: "https://images.unsplash.com/photo-1751215519023-48f8df0f6e45?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Brownie",
       description:
         "Brownie, a one-year-old male cat rescued from Kharodi, Malad West, is in urgent need of Rs. 20,000 for medical treatment of a severe leg wound sustained in an accident.  The poor cat requires immediate care to recover and avoid further suffering. Your donation can make a lifesaving difference for Brownie..",
-      image: "https://via.placeholder.com/400x300.png?text=Brownie",
+      image: "https://images.unsplash.com/photo-1723531055820-f03072bda9dd?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Bruno",
       description:
         "Bruno, a 3-year-old male dog rescued from Malad East, urgently needs Rs. 30,000 for surgery after suffering from a severe leg fracture in an accident. His leg requires immediate medical attention to prevent permanent disability.",
-      image: "https://via.placeholder.com/400x300.png?text=Bruno",
+      image: "https://images.unsplash.com/photo-1602879535314-3ae6fba01c92?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Tommy",
       description:
         "Tommy, a 2-year-old male dog rescued from Kandivali, urgently needs Rs. 15,000 for treatment after a car accident that caused multiple fractures. Your help can give Tommy a chance to walk again.",
-      image: "https://via.placeholder.com/400x300.png?text=Tommy",
+      image: "https://images.unsplash.com/photo-1733210872526-863e2f16cf39?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
 
@@ -86,7 +86,7 @@ const App = () => {
     window.addEventListener("resize", handleResize);
     handleResize();
 
-    const interval = setInterval(nextSlide, 2000);
+    const interval = setInterval(nextSlide, 5000);
 
     return () => {
       clearInterval(interval);

@@ -138,13 +138,13 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-600 mt-8 pt-6 flex flex-col lg:flex-row justify-between items-center">
+        <div className="border-t border-gray-600 mt-8 pt-6 flex flex-col  xl:flex-row justify-between items-center">
           {/* Search Bar */}
-          <div className="flex items-center mb-4 lg:mb-0">
+          <div className=" w-full flex items-center mb-4 lg:mb-0">
             <input
               type="text"
               placeholder="Search..."
-              className="px-4 py-2 bg-gray-700 text-white rounded-l-md focus:outline-none"
+              className="px-4 py-2 w-full bg-gray-700 text-white rounded-l-md focus:outline-none"
             />
             <button className="bg-yellow-500 text-gray-800 px-4 py-2 rounded-r-md hover:bg-yellow-400 transition-colors">
               <svg
@@ -163,7 +163,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media Icons */}
-          <div className="flex space-x-4 mb-4 lg:mb-0">
+          <div className="flex w-full justify-evenly mt-5 xl:mt-0 space-x-4 mb-4 lg:mb-0">
             <a
               href="#"
               className="text-gray-300 hover:text-white transition-colors"
@@ -203,7 +203,7 @@ const Footer = () => {
           </div>
 
           {/* Legal Links */}
-          <div className="text-sm flex flex-wrap justify-center space-x-4">
+          <div className="text-sm mt-5 xl:mt-0  flex flex-wrap whitespace-nowrap  justify-center xl:justify-start space-x-4">
             <a href="#" className="hover:text-yellow-400 transition-colors">
               Terms and Conditions
             </a>

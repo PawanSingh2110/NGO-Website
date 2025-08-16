@@ -12,7 +12,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if (pathname === "/" || pathname ==="/what-we-do" || pathname === "/Getinvolved") {
+    if (
+      pathname === "/" ||
+      pathname === "/what-we-do" ||
+      pathname === "/Getinvolved"
+    ) {
       const handleScroll = () => {
         if (window.scrollY > 80) {
           setIsScrolled(true);
@@ -33,13 +37,15 @@ const Navbar = () => {
 
   return (
     <nav
-    className={`flex justify-between items-center px-4 py-1 fixed w-full top-0 z-50 transition-colors duration-300 ${
-      pathname === "/" || pathname === "/what-we-do"|| pathname === "/Getinvolved"  
-        ? isScrolled
-          ? "bg-green-500 text-black"
-          : "bg-transparent text-white"
-        : "bg-green-500 text-black"
-    }`}
+      className={`flex justify-between items-center px-4 py-1 fixed w-full top-0 z-50 transition-colors duration-300 ${
+        pathname === "/" ||
+        pathname === "/what-we-do" ||
+        pathname === "/Getinvolved"
+          ? isScrolled
+            ? "bg-green-500 text-black"
+            : "bg-transparent text-white"
+          : "bg-green-500 text-black"
+      }`}
     >
       <div className="text-xl font-bold">
         <Link href="/">
@@ -62,7 +68,7 @@ const Navbar = () => {
           <li className="px-3 py-1 hover:bg-yellow-400 rounded-md hover:text-gray-800 transition duration-300">
             <Link href="/About-us">About us</Link>
           </li>
-         
+
           <li className="px-3 py-1 hover:bg-yellow-400 rounded-md hover:text-gray-800 transition duration-300">
             <Link href="/Contact">Contact</Link>
           </li>
@@ -79,6 +85,7 @@ const Navbar = () => {
       </button>
 
       {/* Mobile Menu */}
+      {/* Mobile Menu */}
       <div
         className={`xl:hidden fixed top-0 right-0 w-3/4 h-full bg-gray-800 text-white transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
@@ -90,25 +97,55 @@ const Navbar = () => {
           </button>
         </div>
         <ul className="flex flex-col items-start mt-8 space-y-4 px-4">
-          <li className="text-lg px-4 py-2 hover:bg-yellow-400 rounded-md transition duration-300 w-full text-left">
-            <Link href="/">Home</Link>
+          <li className="w-full">
+            <Link
+              href="/"
+              onClick={() => setIsOpen(false)}
+              className="block text-lg px-4 py-2 hover:bg-yellow-400 rounded-md transition duration-300 text-left"
+            >
+              Home
+            </Link>
           </li>
-          <li className="text-lg px-4 py-2 hover:bg-yellow-400 rounded-md transition duration-300 w-full text-left">
-            <Link href="/what-we-do">What we do</Link>
+          <li className="w-full">
+            <Link
+              href="/what-we-do"
+              onClick={() => setIsOpen(false)}
+              className="block text-lg px-4 py-2 hover:bg-yellow-400 rounded-md transition duration-300 text-left"
+            >
+              What we do
+            </Link>
           </li>
-          <li className="text-lg px-4 py-2 hover:bg-yellow-400 rounded-md transition duration-300 w-full text-left">
-            <Link href="/Getinvolved">Get involved</Link>
+          <li className="w-full">
+            <Link
+              href="/Getinvolved"
+              onClick={() => setIsOpen(false)}
+              className="block text-lg px-4 py-2 hover:bg-yellow-400 rounded-md transition duration-300 text-left"
+            >
+              Get involved
+            </Link>
           </li>
-          <li className="text-lg px-4 py-2 hover:bg-yellow-400 rounded-md transition duration-300 w-full text-left">
-            <Link href="/About-us">About us</Link>
+          <li className="w-full">
+            <Link
+              href="/About-us"
+              onClick={() => setIsOpen(false)}
+              className="block text-lg px-4 py-2 hover:bg-yellow-400 rounded-md transition duration-300 text-left"
+            >
+              About us
+            </Link>
           </li>
-        
-          <li className="text-lg px-4 py-2 hover:bg-yellow-400 rounded-md transition duration-300 w-full text-left">
-            <Link href="/Contact">Contact</Link>
+          <li className="w-full">
+            <Link
+              href="/Contact"
+              onClick={() => setIsOpen(false)}
+              className="block text-lg px-4 py-2 hover:bg-yellow-400 rounded-md transition duration-300 text-left"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
+
         <div className="flex justify-center mt-auto mb-4 px-4">
-          <Link href="/Donate">
+          <Link href="/" onClick={() => setIsOpen(false)}>
             <button className="font-medium px-5 py-2 rounded-md text-lg hover:bg-yellow-500 transition duration-300 w-full text-left">
               Donate
             </button>
@@ -118,7 +155,7 @@ const Navbar = () => {
 
       {/* Donate Button */}
       <div className="hidden xl:block">
-        <Link href="/Donate">
+        <Link href="/">
           <button className="font-medium border-2 border-black bg-green-500 px-5 py-2 rounded-md text-lg hover:bg-yellow-500 transition duration-300">
             Donate
           </button>

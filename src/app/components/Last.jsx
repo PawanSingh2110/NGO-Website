@@ -41,7 +41,7 @@ const CardsSection = () => {
                 <button
                   className="mt-6 py-2 px-4 bg-green-600 hover:bg-yellow-400 text-black font-semibold rounded"
                 >
-                  Know More
+                  <a href="#">Know More</a>
                 </button>
               </div>
             </div>

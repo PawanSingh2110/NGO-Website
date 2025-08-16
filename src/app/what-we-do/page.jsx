@@ -17,7 +17,7 @@ const Page = () => {
       des: "Sympathy with the animal to be rescued is the main driving force behind all that we do. We have tried to imbibe the values of kindness even in our rescue process and practices. One example of this is that we do not use a net to catch animals. As far as possible, we try to avoid tools and approach the suffering animal with love and gentleness",
       but: "Learn more",
       img: "https://images.unsplash.com/photo-1536862542715-bba7273d6cac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRvZyUyMHNoZWx0ZXJ8ZW58MHx8MHx8fDA%3D",
-      link: "/rescue",
+      link: "",
     },
     {
       home: FaHandHoldingMedical,
@@ -25,7 +25,7 @@ const Page = () => {
       des: "Medical treatment is one of the most important areas where animals need our help. We cannot share the animal’s pain or feel the distress she is feeling, but we try our best to reduce her suffering as far as possible. Our treatment protocols are designed with only one purpose in mind: giving every fighting chance to the struggling animal so her precious life is saved, even if that looks difficult at the time of rescue",
       but: "Learn more",
       img: "https://images.unsplash.com/photo-1692951350082-3eb03155bf12?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9nJTIwc2hlbHRlcnxlbnwwfHwwfHx8MA%3D%3D",
-      link: "/treatment",
+      link: "",
     },
     {
       home: IoPawSharp,
@@ -33,7 +33,7 @@ const Page = () => {
       des: "It takes time and patience to win the trust of the gentle beings we pick for rescue from the streets. The abuse, neglect and indifference they have endured on the streets make Rehabilitation a long and ongoing process. All recovered dogs who are healthy to survive on their own are released back to their original locations (refer to the release part of this section to read more)",
       but: "Learn more",
       img: "https://images.unsplash.com/photo-1583786693544-e352f898888d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvZyUyMHNoZWx0ZXJ8ZW58MHx8MHx8fDA%3D",
-      link: "/rehabilitation", // Add the link to the Rehabilitation page here
+      link: "", // Add the link to the Rehabilitation page here
     },
     {
       home: FaHeart,
@@ -41,7 +41,7 @@ const Page = () => {
       des: "All animals deserve to spend their life peacefully and undisrupted in their own locality. An animal rescue shelter may appear safe, comfortable and convenient for healthy animals but in reality, shelters are hotspots for several life-threatening and contagious infections brought in by different animals rescued for so many different issues",
       but: "Learn more",
       img: "https://images.unsplash.com/photo-1710530911048-dd0acc539612?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRvZyUyMHNoZWx0ZXJ8ZW58MHx8MHx8fDA%3D",
-      link: "/releasee",
+      link: "",
     },
   ];
 

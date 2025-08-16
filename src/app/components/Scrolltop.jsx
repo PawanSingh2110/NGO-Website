@@ -32,7 +32,7 @@ const ScrollToTopButton = () => {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-4 right-4 px-3 py-3 bg-orange-500 text-white text-lg z-50 rounded-full shadow-lg hover:bg-blue-600"
+        className="fixed bottom-4 right-4 px-3 py-3 bg-green-500 text-white text-lg z-50 rounded-full shadow-lg hover:bg-yellow-500"
       >
        <FaLongArrowAltUp />
       </button>

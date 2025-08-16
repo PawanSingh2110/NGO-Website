@@ -32,42 +32,42 @@ const BlogSlider = () => {
       date: "JULY 24, 2024",
       comments: "NO COMMENTS",
       description: "Introducing a new pet to a jealous furry friend may take time and patience, but with the right approach, it can lead to a harmonious household.",
-      img: "https://via.placeholder.com/400x300?text=Introducing+a+New+Pet",
+      img: "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg",
     },
     {
       title: "Taming the Tub: A Soapy Guide to Bathing Fussy Pets",
       date: "JULY 10, 2024",
       comments: "1 COMMENT",
       description: "If you're the proud parent of a furry (or scaly, or feathery) friend who sees bath time as an extreme sport, fear not! We've got your back.",
-      img: "https://via.placeholder.com/400x300?text=Taming+the+Tub",
+      img: "https://images.unsplash.com/photo-1532386236358-a33d8a9434e3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhdHN8ZW58MHx8MHx8fDA%3D",
     },
     {
       title: "Taming the Tricksters: A Guide to Administering Medication to Finicky Furballs",
       date: "JULY 3, 2024",
       comments: "NO COMMENTS",
       description: "Administering medication to our beloved pets can be a real challenge, especially when dealing with stubborn dogs and cats.",
-      img: "https://via.placeholder.com/400x300?text=Taming+the+Tricksters",
+      img: "https://media.istockphoto.com/id/1388993174/photo/woman-pet-owner-cuddling-with-cat.webp?a=1&b=1&s=612x612&w=0&k=20&c=muymZ0I4PuN40zVKHec2gFKWjwzZusqrPXdiNe_87dM=",
     },
     {
       title: "Understanding Your Pet’s Behavior",
       date: "JUNE 20, 2024",
       comments: "2 COMMENTS",
       description: "Learn how to read your pet's body language and behavior to strengthen your bond and improve communication.",
-      img: "https://via.placeholder.com/400x300?text=Understanding+Your+Pet",
+      img: "https://images.unsplash.com/photo-1601758176175-45914394491c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Healthy Diets for Your Pets",
       date: "MAY 18, 2024",
       comments: "NO COMMENTS",
       description: "Discover the best dietary practices to keep your pets healthy and active.",
-      img: "https://via.placeholder.com/400x300?text=Healthy+Diets",
+      img: "https://images.unsplash.com/photo-1616249022368-e3ce55dd3bbb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAyfHxjYXRzfGVufDB8fDB8fHww",
     },
     {
       title: "Exercise Routines for Pets",
       date: "APRIL 15, 2024",
       comments: "5 COMMENTS",
       description: "Ensure your pet stays fit and happy with our comprehensive exercise guide.",
-      img: "https://via.placeholder.com/400x300?text=Exercise+Routines",
+      img: "https://images.unsplash.com/photo-1601375461722-bc5aea6eee82?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8",
     },
   ];
 
@@ -99,7 +99,7 @@ const BlogSlider = () => {
     window.addEventListener("resize", handleResize);
     handleResize();
 
-    const interval = setInterval(nextSlide, 2000);
+    const interval = setInterval(nextSlide, 4000);
 
     return () => {
       clearInterval(interval);
